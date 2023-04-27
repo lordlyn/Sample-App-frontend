@@ -1,0 +1,31 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-record-container {
+  height: auto;
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid lightgray;
+
+  form {
+    width: 100%;
+    p {
+      margin: 0;
+      mat-form-field {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    .button-group {
+      display: flex;
+      justify-content: end;
+      gap: 10px;
+    }
+  }
+}

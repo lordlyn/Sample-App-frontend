@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="add-record-container">
+    <form [formGroup]="addRecordForm" (ngSubmit)="addRecord()">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input matInput formControlName="firstName" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="lastName" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Address</mat-label>
+          <input matInput formControlName="address" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Notes</mat-label>
+          <input matInput formControlName="notes" />
+        </mat-form-field>
+      </p>
+      <div class="button-group">
+        <button
+          type="button"
+          mat-raised-button
+          color="primary"
+          (click)="openViewDialog()"
+        >
+          View Records
+        </button>
+        <button type="submit" mat-raised-button color="primary">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
